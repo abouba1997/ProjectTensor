@@ -23,7 +23,6 @@ function CoursesPage() {
       {showModal && <PopupLoginSignup onClose={() => setShowModal(false)}/>}
       <div className='wrapper'>
         <div className='wrapper__content'>
-          <Landing />
           <Courses />
           <Footer />
         </div>
