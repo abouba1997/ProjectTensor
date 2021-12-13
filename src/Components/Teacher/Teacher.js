@@ -1,11 +1,11 @@
-const Teacher = ({image, name, desc, domain}) => {
+const Teacher = (props) => {
     return(
         <div className="card__teacher">
-            <img className="teacher__img" src={image} alt="Lesson Avatar1"/>
-            <div className="teacher__title" title="Lesson Title">{name}</div>
+            <img className="teacher__img" src={props.image} alt="Lesson Avatar1"/>
+            <div className="teacher__title" title="Lesson Title">{props.name}</div>
             <div className="teacher__description" title="Lesson Description">
-                <p>{desc}</p>
-                <p>{domain}</p>
+                <p>{props.desc}</p>
+                <p>{props.domain}</p>
             </div>
         </div>
     )
