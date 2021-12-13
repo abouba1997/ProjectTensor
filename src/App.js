@@ -11,6 +11,7 @@ function App() {
           <Route path = "/" element ={<MainPage/>}/>
           <Route path = "/Courses" element ={<CoursesPage/>}/>
           <Route path="*" element={<NotFound/>}/>
+           <Route path= "tensor.ru"/>
       </Routes>
     </BrowserRouter>
 

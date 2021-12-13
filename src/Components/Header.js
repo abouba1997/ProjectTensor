@@ -22,7 +22,7 @@ const Header = ({onAdd}) => {
                     <div className={`header__menu ${!hamburger ? "header__hamburger_inactive" : ""}`}>
                         <ul className="menu__list">
                             <li className="menu__item">
-                                <a href="/https://tensor.ru/" className="menu__link" target="_blank">О нас</a>
+                                <a href="tensor.ru" className="menu__link" target="_blank">О нас</a>
                             </li>
                             <li className="menu__item">
                             <Link to="/courses" className="menu__link">Все курсы</Link>
