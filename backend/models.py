@@ -52,7 +52,7 @@ class Lesson(db.Model):
 
     title = db.Column(db.String(50))
     description = db.Column(db.String(250))
-    image = db.Column(db.String(50))
+    image = db.Column(db.String(250))
     infos = db.Column(JSON)
 
     

@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from 'react';
 
-import Header from '../Components/Header/Header';
-import Lesson from '../Components/lesson/Lesson'
-import Footer from '../Components/Footer/Footer';
-import PopupLoginSignup from '../Components/PopupLoginSignup/PopupLoginSignup';
+import Header from "../Header/Header";
+import Principal from "./Principal/Principal";
+import Footer from "../Footer/Footer";
+import PopupLoginSignup from "../PopupLoginSignup/PopupLoginSignup";
 
-function LessonPage() {
+function Main() {
     const [showModal, setShowModal] = useState(false)
     return (
         <div>
@@ -14,7 +14,7 @@ function LessonPage() {
             {showModal && <PopupLoginSignup onClose={() => setShowModal(false)}/>}
             <div className='wrapper'>
                 <div className='wrapper__content'>
-                    <Lesson/>
+                    <Principal/>
                     <Footer/>
                 </div>
             </div>
@@ -22,4 +22,4 @@ function LessonPage() {
     );
 };
 
-export default LessonPage;
+export default Main;

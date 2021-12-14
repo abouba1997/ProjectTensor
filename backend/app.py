@@ -1,5 +1,6 @@
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS 
 from config import Config
 
 from flask_migrate import Migrate
@@ -7,6 +8,7 @@ from flask_migrate import Migrate
 
 app = Flask(__name__)
 app.config.from_object(Config)
+CORS(app)
 
 db = SQLAlchemy(app)
 
@@ -178,11 +180,11 @@ def get_lessons():
 # Get a single lesson 3
 @app.route('/lessons/<id>', methods = ['GET'])
 def get_lesson(id):
-    lesson = models.Lesson.query.filter_id(id=id).one()
+    lesson = models.Lesson.query.filter_by(id=id).one()
     return {'lesson': format_lesson(lesson)}
 
 
-# Delete teacher 4
+# Delete lesson 4
 @app.route('/lessons/<id>', methods = ['DELETE'])
 def delete_lesson(id):
     lesson = models.Lesson.query.filter_by(id=id).one()
@@ -191,14 +193,14 @@ def delete_lesson(id):
     return f'Lesson (id: {id}) deleted'
 
 
-# Update teacher 5
+# Update lesson 5
 @app.route('/lessons/<id>', methods = ['PUT'])
 def update_lesson(id):
     lesson = models.Lesson.query.filter_by(id=id)
     new_lesson = request.get_json();
     lesson.update(dict(category_id=new_lesson['category_id'], teacher_id=new_lesson['teacher_id'], title=new_lesson['title'], description=new_lesson['description'], image=new_lesson['image'], infos=new_lesson['infos']))
     db.session.commit()
-    formatted_lesson = format_teacher(lesson.one())
+    formatted_lesson = format_lesson(lesson.one())
     return {'lesson': formatted_lesson}
 
 if __name__ == "__main__":
