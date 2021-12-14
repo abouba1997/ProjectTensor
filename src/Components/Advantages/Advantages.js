@@ -1,13 +1,15 @@
-import BOOK_IMG from './img/book.png';
-import GROUP_IMG from './img/group.png';
-import CERTIFICATE_IMG from './img/certificate.png';
+import BOOK_IMG from '../img/book.png';
+import GROUP_IMG from '../img/group.png';
+import CERTIFICATE_IMG from '../img/certificate.png';
+
+import "./advantages.css"
 
 const Advantages = () => {
     return (
         <div className="wrap">
             <div className="advantages">
                 <header>
-                    <p className="advantages__title">TensorSchool и Премиущества </p>
+                    <p className="advantages__title">TensorSchool и Преимущества </p>
                 </header>
                 <div className="advantages__description">
                     TensorSchool является образовательной платформой, предназначенная для предоставления учебных 

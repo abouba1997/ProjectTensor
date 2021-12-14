@@ -1,8 +1,10 @@
-import logo from './img/logo.jpg';
-import VK_IMG from './img/vk.png';
-import FACEBOOK_IMG from './img/facebook-f-brands.svg';
-import INSTAGRAM_IMG from './img/instagram-square-brands.svg';
-import TWITTER_IMG from './img/twitter-brands.svg';
+import logo from '../img/logo.jpg';
+import VK_IMG from '../img/vk.png';
+import FACEBOOK_IMG from '../img/facebook-f-brands.svg';
+import INSTAGRAM_IMG from '../img/instagram-square-brands.svg';
+import TWITTER_IMG from '../img/twitter-brands.svg';
+
+import './footer.css';
 
 const Footer = () => {
     return (

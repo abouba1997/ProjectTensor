@@ -1,17 +1,10 @@
 import { useState } from 'react';
 
-import '../Components/css/styles.css';
-import '../Components/css/modals.css';
-import '../Components/css/lesson.css';
-import '../Components/css/media_query.css';
-
-import Header from '../Components/Header';
-import Landing from '../Components/Landing';
-import Courses from '../Components/Courses';
-import Advantages from '../Components/Advantages';
-import Teachers from '../Components/Teachers';
-import Footer from '../Components/Footer';
-import PopupLoginSignup from '../Components/PopupLoginSignup';
+import Header from '../Components/Header/Header';
+import CoursesAll from '../Components/Courses/CoursesAll';
+import Footer from '../Components/Footer/Footer';
+import PopupLoginSignup from '../Components/PopupLoginSignup/PopupLoginSignup';
+import Pagination from '../Components/Pagination/pagination';
 
 
 function CoursesPage() {
@@ -23,7 +16,8 @@ function CoursesPage() {
       {showModal && <PopupLoginSignup onClose={() => setShowModal(false)}/>}
       <div className='wrapper'>
         <div className='wrapper__content'>
-          <Courses />
+          <CoursesAll />
+          <Pagination/>
           <Footer />
         </div>
       </div>

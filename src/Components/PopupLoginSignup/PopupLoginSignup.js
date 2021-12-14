@@ -1,8 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
-import logo from './img/logo.jpg';
-import Signup from './Forms/Signup';
-import Login from './Forms/Login';
+import logo from '../img/logo.jpg';
+import Signup from '../Forms/Signup';
+import Login from '../Forms/Login';
+
+import './PopupLoginSignup.css';
 
 const PopupLoginSignup  = ({onClose}) => {
 
