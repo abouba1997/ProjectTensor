@@ -5,17 +5,24 @@ import PYTHON_IMG from '../img/python.png';
 
 import './courses.css'
 import Course from '../Course/Course';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const CategoryElement = ({categoryName}) => {
-    
     const [clicked, setClicked] = useState(false);
-
     return (
         <li className={`courses__list-item ${clicked ? "courses__list-item_active" : ""}`}
         onClick={() => setClicked(true)}>{categoryName}</li>
     )
 }
+    
+    // useEffect( () => {
+    //     fetchCourses();
+    // }, [])
+    // async function fetchCourses() {
+    //     const courses = await PostService.getAll();
+    // console.log(courses.data)
+    
+
 
 const CoursesMain = () => {
     const courses = [
@@ -43,9 +50,10 @@ const CoursesMain = () => {
             desc: 'Знакомства с языком бакэнда Python. Основы программирования и баз данных.',
             image: PYTHON_IMG
         },
+        
     ]
-    const res = courses.map((item) => 
-    <Course value={item} />
+
+    const res = courses.map((item) => <Course value={item} />
     );
     return (
         <div className="wrap">
