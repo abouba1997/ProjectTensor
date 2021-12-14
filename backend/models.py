@@ -8,7 +8,7 @@ class Teacher(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))
     profession = db.Column(db.String(100))
-    works = db.Column(db.String(100))
+    work = db.Column(db.String(100))
     address = db.Column(db.String(50))
     biography = db.Column(JSON)
     lessons = db.relationship("Lesson", backref='teacher')

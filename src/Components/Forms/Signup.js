@@ -10,19 +10,19 @@ const Signup = () => {
             <div className="form__container">
                 <div className="form__row">
                     <label htmlFor="name"><b>Ф.И.О</b></label>
-                    <input type="text" {...register("name", {required: true, maxLength: 20})} placeholder="Ф.И.О"/>
+                    <input type="text" {...register("name", {required: true, maxLength: 20})} placeholder="Иванов Иван Иванович"/>
                     {errors.name && errors.name.type === 'required' && <span style={{color: 'red'}}>Требуется Ф.И.О</span>}
                 </div>
 
                 <div className="form__row">
                     <label htmlFor="email"><b>Email</b></label>
-                    <input type="email" {...register("email", {required: true})} placeholder="Email"/>
+                    <input type="email" {...register("email", {required: true})} placeholder="school@tensor.ru"/>
                     {errors.email && errors.email.type === 'required' && <span style={{color: 'red'}}>Требуется email</span>}
                 </div>
                 
                 <div className="form__row">
-                    <label htmlFor="pseudo"><b>Pseudo</b></label>
-                    <input type="text" {...register("pseudo", {required: true, maxLength: 30})} placeholder="Pseudo"/>
+                    <label htmlFor="pseudo"><b>Псевдоним</b></label>
+                    <input type="text" {...register("pseudo", {required: true, maxLength: 30})} placeholder="nickname"/>
                     {errors.pseudo && errors.pseudo.type === 'required' && <span style={{color: 'red'}}>Требуется псевдо</span>}
                 </div>
 

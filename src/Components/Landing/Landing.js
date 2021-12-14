@@ -1,4 +1,4 @@
-import Online_learning_illustration from './img/Online_learning_illustration.svg';
+import Online_learning_illustration from '../img/Online_learning_illustration.svg';
 
 const Landing = () => {
     return(

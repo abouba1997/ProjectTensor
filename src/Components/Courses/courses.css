@@ -1,0 +1,151 @@
+.wrap {
+    min-width: 320px;
+    width: 100%;
+    position: relative;
+}
+.courses {
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+}
+.courses__title{
+    text-align: center;
+    margin: 50px 10px;
+    font-size: 4em;
+    font-weight: bold;
+    position: relative;
+    padding: 20px;
+}
+.courses__title::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height:3px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#000000;
+    margin: 0 auto;
+}
+.courses__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu__description {
+    font-size: 24px;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+}
+.courses__category-list {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+}   
+.courses__list-item {
+    display: inline;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 7px 45px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.courses__list-item:hover {
+    background-color: #FEFEFE;
+    border-radius: 5px;
+}
+
+.courses__list-item_active {
+    background:#FEFEFE;
+    border-radius: 5px;
+}
+.courses__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.courses__category-list-button {
+    text-shadow: 1px 0 2px #9a88ff;
+    font-size: 23px;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+}
+.courses__category-list-button:hover {
+    text-decoration: underline;
+}
+.lessons{
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 980px) {
+    
+    .card__lesson {
+        min-width: 200px;
+    }
+    .card__img {
+        height: 200px;
+    }
+    .slogan {
+        font-size: 22px;
+    }
+    .lessons {
+        flex-wrap: wrap;
+    }
+
+    .courses__title {
+        font-size: 40px;
+    }
+    .courses__list-item {
+        font-size: 16px;
+    }
+    .courses__list-item {
+        padding: 10px 15px;
+    }
+    .courses__category-list-button {
+        font-size: 17px;
+        padding: 0;
+    }
+    
+    .card__lesson {
+        min-width: 200px;
+    }
+    .card__img {
+    height: 200px;
+    }
+     .cards__title {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:630px) {
+    .courses__title, .advantages__title {
+        font-size: 28px;
+        margin: 30px 5px;
+    }
+    .courses__list-item {
+        padding: 2px 5px;
+        font-size: 12px;
+    }
+    .courses__category-list {
+        padding: 0;
+    }
+    .courses__category-list-button {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    .courses__menu {
+        padding: 1px;
+    }
+    .lessons {
+        display: flex;
+        justify-content: center;
+    }
+}

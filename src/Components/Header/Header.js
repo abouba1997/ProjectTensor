@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import './header.css'
 
-import logo from './img/logo.jpg';
-import searchButton from './img/search.svg';
+import logo from '../img/logo.jpg';
+import searchButton from '../img/search.svg';
 
 
 const Header = ({onAdd}) => {
@@ -22,13 +23,13 @@ const Header = ({onAdd}) => {
                     <div className={`header__menu ${!hamburger ? "header__hamburger_inactive" : ""}`}>
                         <ul className="menu__list">
                             <li className="menu__item">
-                                <a href="/https://tensor.ru/" className="menu__link" target="_blank">О нас</a>
+                                <a href="tensor.ru" className="menu__link" target="_blank">О нас</a>
                             </li>
                             <li className="menu__item">
                             <Link to="/courses" className="menu__link">Все курсы</Link>
                             </li>
                             <li className="menu__item">
-                                <Link to="/#" className="menu__link">Блог</Link>
+                                <Link to="/Lesson" className="menu__link">Блог</Link>
                             </li>
                             <li className="menu__item">
                                 <a href="#contact_page" className="menu__link">Контакт</a>

@@ -1,0 +1,28 @@
+{
+    "category_id": 3, 
+    "teacher_id": 1, 
+    "title" : "Проектирование", 
+    "description": "",
+    "image": "path_to_image",
+    "infos": {
+        "about": "Ut tortor felis, finibus vitae odio at, vestibulum finibus odio. Phasellus tincidunt, neque nec tempus commodo, dolor sem condimentum neque, non pulvinar ex est et magna. Vestibulum aliquam lorem sit amet risus consequat suscipit. In eget tellus facilisis, pulvinar dolor a, rhoncus felis. Vivamus bibendum iaculis libero in fermentum. Nunc lacus quam, vehicula eget lorem sit amet, semper elementum tellus.",
+        "will_learn": {
+            "description": "Цели этого курса - начать работу с Python как языком программирования и дать вам представление о том, как начать работать с данными в Python. В этом курсе вы узнаете о:",
+            "points": ["Что такое Python и почему он полезен.", "Применение Python в науке о данных", "Как определять переменные в Python", "Назначение функций в Python", "Как работать с файлами для чтения и записи данных в Python", "Наборы и условные операторы в Python"]
+        },
+        "programs": {
+            "module": [{
+                "title": "Основы Python",
+                "module_list": ["Ваша первая программа", "Типы", "Выражения и переменные", "Строковые операции"]
+            },
+            {
+                "title": "Структуры данных Python",
+                "module_list": ["Ваша первая программа", "Типы", "Выражения и переменные", "Строковые операции"]
+            },
+            {
+                "title": "Работа с серверами в Python",
+                "module_list": ["Ваша первая программа", "Типы", "Выражения и переменные", "Строковые операции"]
+            }]
+        }
+    }
+}
