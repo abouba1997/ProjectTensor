@@ -2,6 +2,7 @@
 
 # api venv
 */venv
+__pycache__
 
 # dependencies
 /node_modules

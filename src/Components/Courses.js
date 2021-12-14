@@ -5,6 +5,7 @@ import PYTHON_IMG from './img/python.png';
 
 import Course from './Course/Course';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const CategoryElement = ({categoryName}) => {
     
@@ -16,7 +17,6 @@ const CategoryElement = ({categoryName}) => {
 }
 
 const Courses = () => {
-
     return (
         <div className="wrap">
             <div className="courses">
@@ -30,7 +30,7 @@ const Courses = () => {
                         <CategoryElement categoryName={"База данных"} isClicked={false}/>
                         <CategoryElement categoryName={"Дизайн"} isClicked={false} />
                     </ul>
-                    <a href="courses.html" className="courses__category-list courses__category-list-button">Все курсы</a>
+                    <Link to="/courses" className="courses__category-list courses__category-list-button">Все курсы</Link>
                 </div>
                 <div className="lessons">
                     <Course image={HTML_IMG} title={"HTML"} desc={"Изучаем основы HTML. Научимся как создавать веб-страницы."}/>

@@ -7,4 +7,4 @@ const Instructors = () => {
         </div>
     );
 };
-export default InstructorsPage;
+export default Instructors;

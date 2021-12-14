@@ -1,14 +1,14 @@
-from flask_sqlalchemy import SQLAlchemy
+from app import db
 from sqlalchemy.dialects.postgresql import JSON
 from sqlalchemy.orm import backref
-
-db = SQLAlchemy()
+from datetime import datetime
 
 class Teacher(db.Model):
+    __tablename__ = 'teacher'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))
     profession = db.Column(db.String(100))
-    work = db.Column(db.String(100))
+    works = db.Column(db.String(100))
     address = db.Column(db.String(50))
     biography = db.Column(JSON)
     lessons = db.relationship("Lesson", backref='teacher')
@@ -23,10 +23,11 @@ class Teacher(db.Model):
 
 
     def __repr__(self):
-        return "<Teacher %r>" % self.name
+        return f"<Teacher: id = {self.id},  name = {self.name}>"
 
 
 class Category(db.Model):
+    __tablename__ = 'category'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(20))
     description = db.Column(db.String(250))
@@ -39,10 +40,11 @@ class Category(db.Model):
 
 
     def __repr__(self):
-        return "<Category %r>" % self.name
+        return f"<Category: id = {self.id}, name={self.name}>"
 
 
 class Lesson(db.Model):
+    __tablename__ = 'lesson'
     id = db.Column(db.Integer, primary_key=True)
 
     category_id = db.Column(db.Integer, db.ForeignKey('category.id'))
@@ -64,5 +66,5 @@ class Lesson(db.Model):
 
 
     def __repr__(self):
-        return "<Lesson %r>" % self.title
+        return f"<Lesson: id = {self.id}, title = {self.title}>"
 
