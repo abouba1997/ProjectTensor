@@ -1,0 +1,120 @@
+.wrap {
+    min-width: 320px;
+    width: 100%;
+    position: relative;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #c5c5c5;
+    padding: 35px;
+    border-radius: 150px 0 0 0;
+}
+.footer__header, .footer__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 15px;
+    width: 100%;
+}
+
+.footer__left {
+    margin: 15px;
+}
+
+.footer__body::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+.form__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 25px 0;
+}
+
+.footer__left .logo__text {
+    font-size: 45px;
+}
+
+.footer__left .logo__link {
+    display: flex;
+    align-items: center;
+}
+
+.footer__left .logo__img {
+    border: none;
+    border-radius: 50px;
+    max-width: 40px;
+    width: 100%;
+}
+
+.footer__form {
+    width: 55%;
+    margin: 15px;
+} 
+
+.footer__form form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 18px;
+    background-color:rgb(243, 243, 243);
+}
+
+input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: left;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.footer__copyright {
+    font-size: 18px;
+}
+
+.footer__social-networks-link ul {
+    list-style-type: none;
+}
+
+.footer__social-networks-link ul li {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 50%;
+}
+.footer__social-networks-link ul li img {
+    width: 32px;
+    height: 32px;
+}

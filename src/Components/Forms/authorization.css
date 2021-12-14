@@ -1,0 +1,35 @@
+.application__form {
+    width: 55%;
+}
+.application__content {
+    width: 90%;
+    height: 90%;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.application_title, .application__text {
+    text-align: center;
+}
+.application__img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.application__image {
+    max-width: 40px;
+    width: 100%;
+    height: auto;
+}
+.application__form .form__row {
+    margin: 0;
+}
+.application__form .form__row input,
+.application__form .form__row select,
+.application__form .form__row textarea {
+    padding: 12px 10px;
+    margin: 5px 0;
+}

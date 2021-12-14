@@ -2,7 +2,7 @@ import MainPage from "./pages/Main";
 import CoursesPage from "./pages/CoursesPage";
 import NotFound from "./pages/NotFound";
 
-import {BrowserRouter, Route,  Routes, Navigate} from "react-router-dom";
+import {BrowserRouter, Route,  Routes} from "react-router-dom";
 function App() {
   
   return (

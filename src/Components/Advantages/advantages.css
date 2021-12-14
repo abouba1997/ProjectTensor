@@ -1,0 +1,115 @@
+.wrap {
+    min-width: 320px;
+    width: 100%;
+    position: relative;
+}
+.advantages {
+    display: flex;
+    flex-direction: column;
+}
+.advantage {
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+.card__img {
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+    border: 3px solid #000000;
+    height: 300px;
+    border-bottom: none;
+}
+.card, .cards {
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.card__lesson {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 22%;
+    min-width: 300px;
+    border-bottom: none;
+    border-radius: 30px 30px 0 0;
+    margin: 15px auto;
+    position: relative;
+}
+.card__title {
+    font-size: 24px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.card__description {
+    font-size: 18px;
+    padding: 5px 10px;
+    text-align: left;
+    font-weight: 300;
+}
+.card__link::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: ' ';
+}
+.advantages__description {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: normal;
+}
+.cards__advantage {
+    width: 25%;
+    background-color: #d8d8d8;
+    border-radius: 15px;
+    margin: 15px auto;
+}
+.cards__img {
+    max-width: 70px;
+    width: 100%;
+    margin: 10px auto;
+}
+.cards__title {
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+.advantages__rounded {
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    border-radius: 50px;
+    justify-content: space-around;
+    width: 70%;
+}
+.advantages__rounded-information {
+    width: 70%;
+    font-size: 24px;
+    font-weight: normal;
+}
+.advantages__rounded-link {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #aaaaaa;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all .5s;
+}
+.advantages__rounded-link:hover {
+    background-color: #000000;
+    color: #ffffff;
+}

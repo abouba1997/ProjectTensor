@@ -1,0 +1,74 @@
+.wrap {
+    min-width: 320px;
+    width: 100%;
+    position: relative;
+}
+.courses, .advantages {
+    display: flex;
+    flex-direction: column;
+}
+.courses__title, .advantages__title {
+    text-align: center;
+    margin: 50px 10px;
+    font-size: 4em;
+    font-weight: bold;
+    position: relative;
+    padding: 20px;
+}
+.courses__title::after, .advantages__title::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height:3px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#000000;
+    margin: 0 auto;
+}
+.courses__category-list {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+}   
+.courses__list-item {
+    display: inline;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 7px 45px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.courses__list-item:hover {
+    background-color: #FEFEFE;
+    border-radius: 5px;
+}
+.courses__list-item_active {
+    background:#FEFEFE;
+    border-radius: 5px;
+}
+.courses__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.courses__category-list-button {
+    text-shadow: 1px 0 2px #9a88ff;
+    font-size: 23px;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+}
+.courses__category-list-button:hover {
+    text-decoration: underline;
+}
+.lessons{
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+}

@@ -1,9 +1,10 @@
-import HTML_IMG from './img/html.jpg';
-import CSS_IMG from './img/css.jpg';
-import JS_IMG from './img/js.jpg';
-import PYTHON_IMG from './img/python.png';
+import HTML_IMG from '../img/html.jpg';
+import CSS_IMG from '../img/css.jpg';
+import JS_IMG from '../img/js.jpg';
+import PYTHON_IMG from '../img/python.png';
 
-import Course from './Course/Course';
+import './courses.css'
+import Course from '../Course/Course';
 import { useState } from 'react';
 
 const CategoryElement = ({categoryName}) => {
@@ -11,7 +12,8 @@ const CategoryElement = ({categoryName}) => {
     const [clicked, setClicked] = useState(false);
 
     return (
-        <li className={`courses__list-item ${clicked ? "courses__list-item_active" : ""}`} onClick={() => setClicked(true)}>{categoryName}</li>
+        <li className={`courses__list-item ${clicked ? "courses__list-item_active" : ""}`}
+        onClick={() => setClicked(true)}>{categoryName}</li>
     )
 }
 

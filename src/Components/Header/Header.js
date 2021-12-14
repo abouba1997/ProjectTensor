@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import './header.css'
 
-import logo from './img/logo.jpg';
-import searchButton from './img/search.svg';
+import logo from '../img/logo.jpg';
+import searchButton from '../img/search.svg';
 
 
 const Header = ({onAdd}) => {

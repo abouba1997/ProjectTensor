@@ -1,0 +1,117 @@
+
+.header {
+    width: 100%;
+    min-height: 80px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.header__container {
+    max-width: 92%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.header__left, .footer__left {
+    margin: auto 0;
+}
+.logo__link {
+    display: block;
+    text-decoration: none;
+}
+.logo__img{
+    height: auto;
+    width: 32px;
+    border-radius: 50%;
+}
+.logo__text {
+    font-size: 1.5em;
+    color: #04456A;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 42px;
+    text-shadow: 0 0 1.5px #372c61;
+}
+.menu_list {
+    list-style: none;
+    text-align: center;
+}
+.menu__item {
+    display: inline-block;
+}
+.menu__link {
+    display: block;
+    padding: 10px 7px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #646464;
+    font-size: 1.2em;
+    font-weight: 500;
+    position: relative;
+}
+.menu__link,
+.menu__link::after,
+.menu__link::before {
+    transition: all 0.5s;
+}
+.menu__link:hover {
+    color:#000000;
+}
+.menu__link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #000000;
+    height: 2px;
+}
+.menu__link:hover::after {
+    width: 100%;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+.header__search-icon {
+    width: 24px;
+    margin: 0 5px;
+}
+.header__search-icon:hover {
+    cursor: pointer;
+}
+.header__authentication-button {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color:#646464;
+    margin: 0 0 0 20px;
+    padding: 5px 10px;
+    position: relative;
+    transition: all .5s;
+}
+.header__authentication-button:hover {
+    background:#dfdfdf;
+    border-radius: 15px;
+    color: #000000;
+}
+.header__authentication-button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 2px;
+    background-color: #000000;
+    margin-left: -10px;
+    height: 30px;
+}
+.header__hamburger {
+    display: none;
+}
