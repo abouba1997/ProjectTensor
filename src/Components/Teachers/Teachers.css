@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top:50px;
 }
 
 .teacher__big-title {
@@ -75,4 +76,30 @@
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
+}
+@media only screen and (max-width: 980px) {
+    .teacher__big-title {
+        font-size: 25px;
+    }
+    .footer__left .logo__text {
+        font-size: 32px;
+    }
+    .footer__left .logo__img {
+        min-width: 32px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:630px) {
+    .teacher {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card__teacher {
+        width: 90%;
+    }
+    .teacher__list-link {
+        font-size: 14px;
+        bottom: -25px;
+    }
 }

@@ -72,3 +72,66 @@
     width: 90%;
     flex-wrap: wrap;
 }
+@media only screen and (max-width: 980px) {
+    
+    .card__lesson {
+        min-width: 200px;
+    }
+    .card__img {
+        height: 200px;
+    }
+    .slogan {
+        font-size: 22px;
+    }
+    .lessons {
+        flex-wrap: wrap;
+    }
+
+    .courses__title, .advantages__title {
+        font-size: 40px;
+    }
+    .courses__list-item {
+        font-size: 16px;
+    }
+    .courses__list-item {
+        padding: 10px 15px;
+    }
+    .courses__category-list-button {
+        font-size: 17px;
+        padding: 0;
+    }
+    
+    .card__lesson {
+        min-width: 200px;
+    }
+    .card__img {
+    height: 200px;
+    }
+    .cards__title {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:630px) {
+    .courses__title, .advantages__title {
+        font-size: 28px;
+        margin: 30px 5px;
+    }
+    .courses__list-item {
+        padding: 2px 5px;
+        font-size: 12px;
+    }
+    .courses__category-list {
+        padding: 0;
+    }
+    .courses__category-list-button {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    .courses__menu {
+        padding: 1px;
+    }
+    .lessons {
+        display: flex;
+        justify-content: center;
+    }
+}

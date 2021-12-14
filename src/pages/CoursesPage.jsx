@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import '../Components/css/media_query.css';
 
 import Header from '../Components/Header/Header';
 import Courses from '../Components/Courses/Courses';

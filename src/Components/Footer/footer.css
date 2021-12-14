@@ -2,6 +2,7 @@
     min-width: 320px;
     width: 100%;
     position: relative;
+    margin-top: 50px;
 }
 .footer {
     display: flex;
@@ -117,4 +118,41 @@ input[type=submit]:hover {
 .footer__social-networks-link ul li img {
     width: 32px;
     height: 32px;
+}
+@media screen and (max-width:630px) {
+    .footer {
+        padding: 10px;
+    }
+    .footer__header{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .footer__left .logo__text {
+        font-size: 18px;
+    }
+    .footer__left .logo__text::after {
+        content: '';
+        position: absolute;
+        width: 10%;
+        height: 3px;
+        left: 0;
+        right: 0;
+        top: 60px;
+        background: #ffffff;
+        margin: 10px auto;
+    }
+    .footer__form {
+        width: 90%;
+        margin: 5px;
+    }
+    .footer__form .form__title {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 24px;
+    }
+    .footer__body {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
