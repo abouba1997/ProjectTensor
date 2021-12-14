@@ -1,9 +1,10 @@
 import { useState } from 'react';
 
 import Header from '../Components/Header/Header';
-import Courses from '../Components/Courses/Courses';
+import CoursesAll from '../Components/Courses/CoursesAll';
 import Footer from '../Components/Footer/Footer';
 import PopupLoginSignup from '../Components/PopupLoginSignup/PopupLoginSignup';
+import Pagination from '../Components/Pagination/pagination';
 
 
 function CoursesPage() {
@@ -15,7 +16,8 @@ function CoursesPage() {
       {showModal && <PopupLoginSignup onClose={() => setShowModal(false)}/>}
       <div className='wrapper'>
         <div className='wrapper__content'>
-          <Courses />
+          <CoursesAll />
+          <Pagination/>
           <Footer />
         </div>
       </div>

@@ -6,6 +6,26 @@
 .advantages {
     display: flex;
     flex-direction: column;
+    margin-top: -50px;
+}
+.advantages__title::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height:3px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#000000;
+    margin: 0 auto;
+}
+.advantages__title {
+    text-align: center;
+    margin: 50px 10px;
+    font-size: 4em;
+    font-weight: bold;
+    position: relative;
+    padding: 20px;
 }
 .advantage {
     display: flex;

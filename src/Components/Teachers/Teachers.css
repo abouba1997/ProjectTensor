@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top:50px;
 }
 
 .teacher__big-title {

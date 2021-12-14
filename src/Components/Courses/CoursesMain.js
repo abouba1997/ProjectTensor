@@ -17,8 +17,36 @@ const CategoryElement = ({categoryName}) => {
     )
 }
 
-const Courses = () => {
-
+const CoursesMain = () => {
+    const courses = [
+        {
+            id: 1,
+            title: 'HTML',
+            desc: 'Изучаем основы HTML. Научимся как создавать веб-страницы.',
+            image: HTML_IMG
+        },
+        {
+            id: 2,
+            title: 'CSS',
+            desc: 'Изучаем основы CSS. Научимся использовать CSS для оформления веб-страницы',
+            image: CSS_IMG
+        },
+        {
+            id: 3,
+            title: 'JAVASCRIPT',
+            desc: 'Узнаем, как работает JavaScript в браузере. Научимся оживлять интерфейсы.',
+            image: JS_IMG
+        },
+        {
+            id: 4,
+            title: 'PYTHON',
+            desc: 'Знакомства с языком бакэнда Python. Основы программирования и баз данных.',
+            image: PYTHON_IMG
+        },
+    ]
+    const res = courses.map((item) => 
+    <Course value={item} />
+    );
     return (
         <div className="wrap">
             <div className="courses">
@@ -35,14 +63,11 @@ const Courses = () => {
                     <a href="courses.html" className="courses__category-list courses__category-list-button">Все курсы</a>
                 </div>
                 <div className="lessons">
-                    <Course image={HTML_IMG} title={"HTML"} desc={"Изучаем основы HTML. Научимся как создавать веб-страницы."}/>
-                    <Course image={CSS_IMG} title={"CSS"} desc={"Изучаем основы CSS. Научимся использовать CSS для оформления веб-страницы"}/>
-                    <Course image={JS_IMG} title={"JAVASCRIPT"} desc={"Узнаем, как работает JavaScript в браузере. Научимся оживлять интерфейсы."}/>
-                    <Course image={PYTHON_IMG} title={"PYTHON"} desc={"Знакомства с языком бакэнда Python. Основы программирования и баз данных."}/>
+                    {res}
                 </div>
             </div>
         </div>
     )
 }
 
-export default Courses;
+export default CoursesMain;
