@@ -4,6 +4,8 @@ import FACEBOOK_IMG from '../img/facebook-f-brands.svg';
 import INSTAGRAM_IMG from '../img/instagram-square-brands.svg';
 import TWITTER_IMG from '../img/twitter-brands.svg';
 
+import { Link } from 'react-router-dom';
+
 import './footer.css';
 
 const Footer = () => {
@@ -12,10 +14,10 @@ const Footer = () => {
             <div className="footer">
                 <div className="footer__header">
                     <div className="footer__left">
-                        <a href="/#" className="logo__link">
+                        <Link to="/#" className="logo__link">
                             <img className="logo__img" src={logo} alt="Логотип компании Тензор"/>
                             <span className="logo__text">TensorSchool</span>
-                        </a>
+                        </Link>
                     </div>
                     <div className="footer__form">
                         <div className="form__title">Контакт</div>
