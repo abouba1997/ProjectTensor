@@ -31,7 +31,7 @@ const teachers = [
     }
 ]
 const res = teachers.map((item) => 
-    <Teacher value={item} />
+    <Teacher key={item.id} value={item} />
 );
     return (
         <div className="wrap">

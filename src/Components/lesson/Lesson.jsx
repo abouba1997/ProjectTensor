@@ -5,27 +5,27 @@ import AVATAR3 from '../img/avatar3.png'
 const Lesson = () => {
     return(
         <div>
-            <div class="intro__lesson">
-                <div class="intro__lesson-left">
-                    <h1 class="introduction__title">Добро пожаловать на Python курс</h1>
-                    <p class="introduction__description">
+            <div className="intro__lesson">
+                <div className="intro__lesson-left">
+                    <h1 className="introduction__title">Добро пожаловать на Python курс</h1>
+                    <p className="introduction__description">
                         Этот курс представляет собой удобное для начинающих введение в Python для бэкенда. 
                         Потренируйтесь на практических занятиях, и вы будете готовы самостоятельно создавать свои первые скрипты на Python!
                         Вы получите углублённые знания технологий, которые используются в backend-разработке на Python.
                     </p>
-                    <div class="lesson__duration-claim">
-                        <div class="lesson__duration">
-                            <h3 class="lesson__duration-title">Длительность</h3>
+                    <div className="lesson__duration-claim">
+                        <div className="lesson__duration">
+                            <h3 className="lesson__duration-title">Длительность</h3>
                             <p>8 неделя</p>
                             <p>Еженедельно (Вт,Чт в 18ч)</p>
                         </div>
-                        <div class="lesson__claim">
-                            <h3 class="lesson__duration-title">Требования</h3>
+                        <div className="lesson__claim">
+                            <h3 className="lesson__duration-title">Требования</h3>
                             <p>
                                 Изучите предшествующие курсы или имееть предварительное требование.
-                                <a class="lesson__claim-list" href="">Смотрите подробное</a>
+                                <a className="lesson__claim-list" href="/#">Смотрите подробное</a>
                             </p>
-                            <div class="lesson__exigences">
+                            <div className="lesson__exigences">
                                 <ul>
                                     <li><a href="a">Первый урок</a></li>
                                     <li><a href="a">Второй урок</a></li>
@@ -34,25 +34,25 @@ const Lesson = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="lesson__enroll">
-                        <a href="#" class="lesson__enroll-button">Записаться</a>
+                    <div className="lesson__enroll">
+                        <a href="/#" className="lesson__enroll-button">Записаться</a>
                     </div>
                 </div>
-                <div class="intro__lesson-right">
-                    <img class="intro__lesson-image" src={python_img} alt="Python Lesson's Image"/>
+                <div className="intro__lesson-right">
+                    <img className="intro__lesson-image" src={python_img} alt="Python Lesson's"/>
                 </div>
             </div>
 
-            <div class="lesson__description">
-                <div class="lesson__description-links">
-                    <a class="lesson__description-link" href="#lesson__about">About</a>
-                    <a class="lesson__description-link" href="#lesson__learning">What you'll learn</a>
-                    <a class="lesson__description-link" href="#lesson__programs">Programs</a>
-                    <a class="lesson__description-link" href="#lesson__instructor">Instructor</a>
+            <div className="lesson__description">
+                <div className="lesson__description-links">
+                    <a className="lesson__description-link" href="#lesson__about">About</a>
+                    <a className="lesson__description-link" href="#lesson__learning">What you'll learn</a>
+                    <a className="lesson__description-link" href="#lesson__programs">Programs</a>
+                    <a className="lesson__description-link" href="#lesson__instructor">Instructor</a>
                 </div>
 
-                <div class="lesson__about" id="lesson__about">
-                    <h1 class="lesson_part-title">Об этом уроке</h1>
+                <div className="lesson__about" id="lesson__about">
+                    <h1 className="lesson_part-title">Об этом уроке</h1>
                     <p>
                         Начните изучение Python для бэкенд-разработки, а также программирования в целом 
                         с этого курса "Введение в Python". Этот курс для начинающих на Python быстро 
@@ -65,9 +65,9 @@ const Lesson = () => {
                          на базе Jupyter. Если вы хотите изучать Python с нуля, этот курс для вас.
                     </p>
                 </div>
-                <div class="lesson__learning" id="lesson__learning">
-                    <h1 class="lesson_part-title">Что вы будете изучить</h1>
-                    <div class="lesson__learning_detailled">
+                <div className="lesson__learning" id="lesson__learning">
+                    <h1 className="lesson_part-title">Что вы будете изучить</h1>
+                    <div className="lesson__learning_detailled">
                         <p>
                         Цели этого курса - начать работу с Python как языком программирования и дать вам представление о том, как начать работать с данными в Python.
                         В этом курсе вы узнаете о:
@@ -83,9 +83,9 @@ const Lesson = () => {
                         </p>
                     </div>
                 </div>
-                <div class="lesson__programs" id="lesson__programs">
-                    <h1 class="lesson_part-title">Программа урока</h1>
-                    <div class="lesson__programs-module">
+                <div className="lesson__programs" id="lesson__programs">
+                    <h1 className="lesson_part-title">Программа урока</h1>
+                    <div className="lesson__programs-module">
                         <p>
                             <strong>Модуль 1 - Основы Python</strong>
                             <br/>
@@ -121,11 +121,11 @@ const Lesson = () => {
                         </p>
                     </div>
                 </div>
-                <div class="lesson__instructor" id="lesson__instructor">
-                    <h1 class="lesson_part-title">Преподаватель</h1>
-                    <div class="lesson__instructor-details">
-                        <img class="lesson__instructor__img" src={AVATAR3}alt="Фото Преподавателя"/>
-                        <div class="lesson__instructor-informations">
+                <div className="lesson__instructor" id="lesson__instructor">
+                    <h1 className="lesson_part-title">Преподаватель</h1>
+                    <div className="lesson__instructor-details">
+                        <img className="lesson__instructor__img" src={AVATAR3}alt="Фото Преподавателя"/>
+                        <div className="lesson__instructor-informations">
                             <h4>Воробьева Александра</h4>
                             <p><span>Python-программист</span><span>Инструктор бакэнд (Python)</span></p>
                         </div>

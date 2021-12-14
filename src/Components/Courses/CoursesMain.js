@@ -5,7 +5,7 @@ import PYTHON_IMG from '../img/python.png';
 
 import './courses.css'
 import Course from '../Course/Course';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const CategoryElement = ({categoryName}) => {
     const [clicked, setClicked] = useState(false);
@@ -53,7 +53,7 @@ const CoursesMain = () => {
         
     ]
 
-    const res = courses.map((item) => <Course value={item} />
+    const res = courses.map((item) => <Course key={item.id} value={item} />
     );
     return (
         <div className="wrap">

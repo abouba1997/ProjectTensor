@@ -16,9 +16,9 @@ function LessonPage() {
                 <div className='wrapper__content'>
                     <Lesson/>
                     <Footer/>
-        </div>
-            </div>
                 </div>
+            </div>
+        </div>
     );
 };
 export default LessonPage;

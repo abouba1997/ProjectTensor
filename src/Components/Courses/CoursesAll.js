@@ -5,17 +5,6 @@ import PYTHON_IMG from '../img/python.png';
 
 import './courses.css'
 import Course from '../Course/Course';
-import { useState } from 'react';
-
-const CategoryElement = ({categoryName}) => {
-    
-    const [clicked, setClicked] = useState(false);
-
-    return (
-        <li className={`courses__list-item ${clicked ? "courses__list-item_active" : ""}`}
-        onClick={() => setClicked(true)}>{categoryName}</li>
-    )
-}
 
 const CoursesAll = () => {
     const courses = [
@@ -45,7 +34,7 @@ const CoursesAll = () => {
         }
     ]
     const res = courses.map((item) => 
-    <Course value={item} />
+        <Course key={item.id} value={item} />
     );
     return (
         <div className="wrap">
