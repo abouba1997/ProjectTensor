@@ -29,7 +29,7 @@ const Header = ({onAdd}) => {
                             <Link to="/courses" className="menu__link">Все курсы</Link>
                             </li>
                             <li className="menu__item">
-                                <Link to="/#" className="menu__link">Блог</Link>
+                                <Link to="/Lesson" className="menu__link">Блог</Link>
                             </li>
                             <li className="menu__item">
                                 <a href="#contact_page" className="menu__link">Контакт</a>
