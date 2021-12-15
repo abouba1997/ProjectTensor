@@ -5,6 +5,7 @@ import { Form, Button, h1 } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TeacherForm = () => {
+    
     return(
         <>
         <h1>Adding a new teacher</h1>
@@ -34,6 +35,7 @@ const TeacherForm = () => {
 
 const Principal = () => {
     const handleClick = (e) => {
+        
         if(e.target.textContent === "Add a teacher") {
             console.log("Teacher adding")
         }else if(e.target.textContent === "Add a lesson") {
@@ -41,6 +43,7 @@ const Principal = () => {
         }else if(e.target.textContent === "Add a category") {
             console.log("Category adding")
         }
+        
     }
 
     return (

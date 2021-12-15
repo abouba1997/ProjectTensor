@@ -39,7 +39,7 @@ const Header = ({onAdd}) => {
                     <div className={`header__right ${!hamburger ? "header__hamburger_inactive" : ""}` }>
                         <img className="header__search-icon" src={searchButton} alt="Search icon"/>
                         <span className="header__right-bar"></span>
-                        <Link to ="/" className="header__authentication-button" onClick={onAdd}>Войти</Link>
+                        <Link to = "" className="header__authentication-button" onClick={onAdd}>Войти</Link>
                     </div>
                     <div className={`header__hamburger ${hamburger ? "hamburger__bar-toggle" : ""}`} id="hamburger" onClick={() => setHamburger(!hamburger)}>
                         <span className="hamburger__bar hamburger__bar1"></span>

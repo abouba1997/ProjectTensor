@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from 'react';
 
 import Header from "../Header/Header";
-import Principal from "./Principal/Principal";
+import AddSome from "./Principal/AddSome";
 import Footer from "../Footer/Footer";
 import PopupLoginSignup from "../PopupLoginSignup/PopupLoginSignup";
 
@@ -14,7 +14,7 @@ function Main() {
             {showModal && <PopupLoginSignup onClose={() => setShowModal(false)}/>}
             <div className='wrapper'>
                 <div className='wrapper__content'>
-                    <Principal/>
+                    <AddSome/>
                     <Footer/>
                 </div>
             </div>

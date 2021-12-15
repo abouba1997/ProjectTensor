@@ -1,7 +1,7 @@
+import React from "react";
 import { useState } from 'react';
+
 import '../Components/Landing/Landing.css';
-
-
 import Header from '../Components/Header/Header';
 import Landing from '../Components/Landing/Landing';
 import CoursesMain from '../Components/Courses/CoursesMain';
@@ -29,6 +29,6 @@ function MainPage() {
       </div>
     </div>
   );
-}
+};
 
 export default MainPage;

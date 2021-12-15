@@ -7,6 +7,7 @@ import './courses.css'
 import Course from '../Course/Course';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const baseUrl = 'http://localhost:5000/'
 
@@ -90,7 +91,7 @@ const CoursesMain = () => {
                         <CategoryElement categoryName={"База данных"} isClicked={false}/>
                         <CategoryElement categoryName={"Дизайн"} isClicked={false} />
                     </ul>
-                    <a href="courses.html" className="courses__category-list courses__category-list-button">Все курсы</a>
+                <Link to="/courses" className="courses__category-list courses__category-list-button">Все курсы</Link>
                 </div>
                 <div className="lessons">
                     {res}
