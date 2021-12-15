@@ -1,4 +1,4 @@
-import MainPage from "./pages/Main";
+import MainPage from "./pages/MainPage";
 import CoursesPage from "./pages/CoursesPage";
 import LessonPage from "./pages/LessonPage"
 import NotFound from "./pages/NotFound";

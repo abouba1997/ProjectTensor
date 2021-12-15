@@ -1,0 +1,64 @@
+.button{
+    display: flex;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    min-width: 250px;
+    margin:  10px 10px 0 0;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+    .button:hover {
+    background-color: white;
+    color: black;
+}
+.wrap {
+    min-width: 320px;
+    width: 100%;
+    position: relative;
+}
+.addSome {
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+    margin: 50px 10px;
+    font-size: 3em;
+    font-weight: bold;
+    position: relative;
+    padding: 20px;
+}
+.form{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.form__row{
+    max-width: 350px;
+}
+.img__welcome{
+    float:right;
+    width: 35%;
+    margin-right:20px;
+}
+
+@media screen and (max-width:630px) {
+    .title {
+        font-size: 28px;
+        margin: 30px 5px;
+    }
+    .button{
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    .img__welcome{
+        width:0%;
+    }
+}
