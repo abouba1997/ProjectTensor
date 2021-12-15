@@ -4,6 +4,8 @@ import AVATAR3_IMG from '../img/avatar3.png';
 
 import "./Teachers.css"
 
+import { Link } from 'react-router-dom';
+
 import Teacher from '../Teacher/Teacher';
 // import { useEffect } from 'react/cjs/react.development';
 
@@ -38,7 +40,7 @@ const res = teachers.map((item) =>
             <div className="teachers">
                 <header>
                     <p className="teacher__big-title">Учитесь у <span className="teacher__word">лучших инструкторов</span></p>
-                    <a href="/#" className="teacher__list-link">Все инструкторы</a>
+                    <Link to="/teachers" className="teacher__list-link">Все инструкторы</Link>
                 </header>
                 <div className="teacher">
                     {res}
