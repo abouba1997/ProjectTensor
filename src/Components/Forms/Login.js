@@ -6,18 +6,18 @@ const Login = () => {
     const onSubmit = data => console.log(data);
 
     return(
-        <form action="" className="login__form" onSubmit={handleSubmit(onSubmit)}>
+        <form action="" className="login-form" onSubmit={handleSubmit(onSubmit)}>
             <input type="hidden" name="form_0" value="form_0"/>
             <div className="form__container">
                 <div className="form__row">
                     <label htmlFor="username"><b>Логин</b></label>
-                    <input type="text" {...register("username", {required: true, maxLength: 20})} placeholder="Enter Username"/>
+                    <input className="input-text login-form__input" type="text" {...register("username", {required: true, maxLength: 20})} placeholder="Введите логин"/>
                     {errors.username && errors.username.type === 'required' && <span style={{color: 'red'}}>Требуется логин</span>}
                 </div>
             
                 <div className="form__row">
                     <label htmlFor="password"><b>Пароль</b></label>
-                    <input type="password" {...register("password", {required: true, minLength: 8})} placeholder="Password"/>
+                    <input className="input-text login-form__input" type="password" {...register("password", {required: true, minLength: 8})} placeholder="Введите пароль"/>
                     {errors.password && errors.password.type === 'required' && <span style={{color: 'red'}}>Требуется пароль</span>}
                 </div>
                 
@@ -29,7 +29,7 @@ const Login = () => {
                 </div>
             </div>
             <div className="form__footer-container">
-                <div className="password">Или <a href="/#">Забыли пароль?</a></div>
+                <div className="password"><a href="/#">Забыли пароль?</a></div>
             </div>
         </form>
     )

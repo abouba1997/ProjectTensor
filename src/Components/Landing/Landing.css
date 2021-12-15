@@ -1,8 +1,3 @@
-.wrap {
-    min-width: 320px;
-    width: 100%;
-    position: relative;
-}
 .wrapper {
     max-width: 1920px;
     width: 100%;
@@ -17,6 +12,9 @@
     background-image: linear-gradient(to right bottom, #cccccc, #d9d9d9, #e5e5e5, #f2f2f2, #ffffff);
     border-radius: 150px 0 0 0;
     margin-left: auto;
+}
+.wrap__landing {
+    margin-top: 50px;
 }
 .home-page {
     display: flex;
@@ -33,7 +31,7 @@
     line-height: 1.3;
 }
 .home-page__title {
-    font-size: clamp(3em, 1em, 40%);
+    font-size: 45px;
     font-weight: bold;
 }
 .home-page__slogan {
@@ -69,25 +67,8 @@
 .illustration_img {
     width: 100%;
 }
-@media only screen and (max-width: 980px) {
-    
-    .card__lesson {
-        min-width: 200px;
-    }
-    .card__img {
-        height: 200px;
-    }
-    .home-page__title {
-        font-size: 30px;
-    }
-    .slogan {
-        font-size: 22px;
-    }
-    .lessons {
-        flex-wrap: wrap;
-    }
+@media screen and (min-width: 631px) and (max-width: 980px) {
     .home-page {
-        display: flex;
         flex-direction: column-reverse;
     }
     .home-page__text {        
@@ -103,6 +84,7 @@
         margin: 0 auto;
     }
     .home-page__title {
+        font-size: 35px;
         margin: 0;
     }
     .slogan {
@@ -112,11 +94,29 @@
         font-size: 22px;
         padding: 10px 25px;
     }
+}
+/* @media only screen and (max-width: 980px) {
 
-};
-@media screen and (max-width:630px) {
+}; */
+@media screen and (max-width: 630px) {
+    .home-page {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
     .wrapper__content {
         border-radius: 70px 0 0 0;
+    }
+    .home-page__text {        
+        width: 100%;
+        max-width: 600px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    .home-page__illustration {
+        padding: 30px;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
     }
     .home-page__title {
         font-size: 24px;

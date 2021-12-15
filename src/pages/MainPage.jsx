@@ -4,7 +4,7 @@ import { useState } from 'react';
 import '../Components/Landing/Landing.css';
 import Header from '../Components/Header/Header';
 import Landing from '../Components/Landing/Landing';
-import CoursesMain from '../Components/Courses/CoursesMain';
+import Courses from '../Components/Courses/Courses';
 import Advantages from '../Components/Advantages/Advantages';
 import Teachers from '../Components/Teachers/Teachers';
 import Footer from '../Components/Footer/Footer';
@@ -21,7 +21,9 @@ function MainPage() {
       <div className='wrapper'>
         <div className='wrapper__content'>
           <Landing />
-          <CoursesMain />
+          <Courses 
+            title={"Популярные курсы"}
+            page={"Main"} />
           <Advantages />
           <Teachers />
           <Footer />

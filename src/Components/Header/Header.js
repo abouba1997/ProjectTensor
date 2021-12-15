@@ -7,7 +7,7 @@ import logo from '../img/logo.jpg';
 import searchButton from '../img/search.svg';
 
 
-const Header = ({onAdd}) => {
+const Header = ({onAdd, hideMenu}) => {
     const [hamburger, setHamburger] = useState(false);
 
     return(
@@ -21,20 +21,22 @@ const Header = ({onAdd}) => {
                         </Link>
                     </div>
                     <div className={`header__menu ${!hamburger ? "header__hamburger_inactive" : ""}`}>
-                        <ul className="menu__list">
+                    {!hideMenu ?
+                        <ul className="menu__list" >
                             <li className="menu__item">
-                                <a href="tensor.ru" className="menu__link" target="_blank">О нас</a>
+                                <a href="#courses" className="menu__link">Курсы</a>
                             </li>
                             <li className="menu__item">
-                            <Link to="/courses" className="menu__link">Все курсы</Link>
+                                <a href="#advantages" className="menu__link">Преимущества</a>
                             </li>
                             <li className="menu__item">
-                                <Link to="/Lesson" className="menu__link">Блог</Link>
+                                <a href="#teachers" className="menu__link">Преподаватели</a>
                             </li>
                             <li className="menu__item">
                                 <a href="#contact_page" className="menu__link">Контакт</a>
                             </li>
                         </ul>
+                    : ''}
                     </div>
                     <div className={`header__right ${!hamburger ? "header__hamburger_inactive" : ""}` }>
                         <img className="header__search-icon" src={searchButton} alt="Search icon"/>

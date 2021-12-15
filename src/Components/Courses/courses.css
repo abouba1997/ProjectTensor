@@ -1,12 +1,7 @@
-.wrap {
-    min-width: 320px;
-    width: 100%;
-    position: relative;
-}
 .courses {
     display: flex;
     flex-direction: column;
-    margin-top: -50px;
+    /* margin-top: -50px; */
 }
 .courses__title{
     text-align: center;
@@ -87,15 +82,11 @@
     flex-wrap: wrap;
 }
 @media only screen and (max-width: 980px) {
-    
     .card__lesson {
         min-width: 200px;
     }
     .card__img {
         height: 200px;
-    }
-    .slogan {
-        font-size: 22px;
     }
     .lessons {
         flex-wrap: wrap;

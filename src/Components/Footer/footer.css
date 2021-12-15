@@ -1,9 +1,3 @@
-.wrap {
-    min-width: 320px;
-    width: 100%;
-    position: relative;
-    margin-top: 50px;
-}
 .footer {
     display: flex;
     flex-direction: column;
@@ -12,6 +6,7 @@
     padding: 35px;
     border-radius: 150px 0 0 0;
 }
+
 .footer__header, .footer__body {
     display: flex;
     flex-direction: row;
@@ -44,6 +39,10 @@
     margin: 0 0 25px 0;
 }
 
+.form__textarea {
+    min-height: 150px;
+}
+
 .footer__left .logo__text {
     font-size: 45px;
 }
@@ -70,17 +69,6 @@
     flex-direction: column;
     position: relative;
     gap: 1px;
-}
-
-input[type=text], textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    font-size: 18px;
-    background-color:rgb(243, 243, 243);
 }
 
 input[type=submit] {

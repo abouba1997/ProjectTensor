@@ -5,6 +5,7 @@ import Signup from '../Forms/Signup';
 import Login from '../Forms/Login';
 
 import './PopupLoginSignup.css';
+import '../Forms/authorization.css'
 
 const PopupLoginSignup  = ({onClose}) => {
 
@@ -34,8 +35,8 @@ const PopupLoginSignup  = ({onClose}) => {
                     <div className="modal__login-signup">
                         <nav className="login-signup__navbar">
                             <ul className="login-signup__list">
-                                <li className={`login-signup__item ${!formClicked ? "login-signup__item_active" : ""}`} onClick={() => setFormClicked(!formClicked)}><a href="/#" className="login-signup__link">Войти</a></li>
-                                <li className={`login-signup__item ${formClicked ? "login-signup__item_active" : ""}`} onClick={() => setFormClicked(!formClicked)}><a href="/#" className="login-signup__link">Регистрация</a></li>
+                                <li className={`login-signup__item ${!formClicked ? "login-signup__item_active" : ""}`} onClick={() => setFormClicked(!formClicked)}><span className="login-signup__link">Войти</span></li>
+                                <li className={`login-signup__item ${formClicked ? "login-signup__item_active" : ""}`} onClick={() => setFormClicked(!formClicked)}><span className="login-signup__link">Регистрация</span></li>
                             </ul>
                         </nav>
                         <div className="login-signup__form">

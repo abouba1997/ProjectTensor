@@ -1,4 +1,35 @@
-.button{
+.wrap__add-some {
+    min-width: 320px;
+    width: 100%;
+    position: relative;
+}
+.add-some {
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+.add-some__title {
+    text-align: center;
+    margin: 30px 10px;
+    font-size: 3em;
+    font-weight: bold;
+    position: relative;
+    padding: 20px;
+}
+.add-some__img-welcome {
+    float:right;
+    width: 35%;
+    margin-right:20px;
+}
+.form {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.form__row {
+    max-width: 350px;
+}
+.form__button{
     display: flex;
     background-color: #4CAF50; /* Green */
     border: none;
@@ -13,52 +44,21 @@
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
-
-    .button:hover {
+.form__button:hover {
     background-color: white;
     color: black;
 }
-.wrap {
-    min-width: 320px;
-    width: 100%;
-    position: relative;
-}
-.addSome {
-    display: flex;
-    margin-left: 50px;
-    flex-direction: column;
-}
-.title{
-    text-align: center;
-    margin: 50px 10px;
-    font-size: 3em;
-    font-weight: bold;
-    position: relative;
-    padding: 20px;
-}
-.form{
-    margin-top: 10px;
-    margin-right: 20px;
-}
-.form__row{
-    max-width: 350px;
-}
-.img__welcome{
-    float:right;
-    width: 35%;
-    margin-right:20px;
-}
 
-@media screen and (max-width:630px) {
-    .title {
+@media screen and (max-width: 630px) {
+    .form__title {
         font-size: 28px;
         margin: 30px 5px;
     }
-    .button{
+    .form__button {
         font-size: 12px;
         padding: 10px 10px;
     }
-    .img__welcome{
-        width:0%;
+    .add-some__img-welcome {
+        width: 0%;
     }
 }

@@ -165,12 +165,8 @@
 .login-signup__form {
     width: 100%;
 }
-.form__container input[type=text],
-.form__container input[type=password],
-.form__container input[type=email],
-.form__container input[type=tel],
-.form__container .application__selected,
-.form__container textarea {
+
+.form__container .application__selected {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -185,7 +181,7 @@
     border-color: #242424;
 }
 .form__container .form__row {
-    margin: 10px 0;
+    margin: 8px 0;
 }
 .form__container .form__row label b {
     font-size: 14px;

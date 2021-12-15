@@ -6,6 +6,8 @@ import AddSome from "./Principal/AddSome";
 import Footer from "../Footer/Footer";
 import PopupLoginSignup from "../PopupLoginSignup/PopupLoginSignup";
 
+// Главная страница администратора
+
 function Main() {
     const [showModal, setShowModal] = useState(false)
     return (

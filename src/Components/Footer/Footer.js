@@ -8,7 +8,39 @@ import { Link } from 'react-router-dom';
 
 import './footer.css';
 
+const ContactLink = ({item}) => {
+    const {src, alt} = item;
+    return (
+        <li><a href="/#"><img src={src} alt={alt}/></a></li>
+    )
+}
+
 const Footer = () => {
+    const contactList = [
+        {
+            id: 1,
+            src: VK_IMG,
+            alt: "VK"
+        },
+        {
+            id: 2,
+            src: FACEBOOK_IMG,
+            alt: "Facebook"
+        },
+        {
+            id: 3,
+            src: TWITTER_IMG,
+            alt: "Twitter"
+        },
+        {
+            id: 4,
+            src: INSTAGRAM_IMG,
+            alt: "Instagram"
+        }
+    ];
+
+    const dataLinks = contactList.map((link) => <ContactLink key={link.id} item={link} />)
+
     return (
         <footer className="wrap" id="contact_page">
             <div className="footer">
@@ -22,18 +54,10 @@ const Footer = () => {
                     <div className="footer__form">
                         <div className="form__title">Контакт</div>
                         <form action="">
-                            <div className="row">
-                                <input type="text" placeholder="Ф.И.О"/>
-                            </div>
-                            <div className="row">
-                                <input type="text" placeholder="Email"/>
-                            </div>
-                            <div className="row">
-                                <textarea placeholder="Сообщение..." style={{height: 150 + "px"}}></textarea>
-                            </div>
-                            <div className="row">
-                                <input type="submit" value="Отправить"/>
-                            </div>
+                            <input type="text" className="input-text" placeholder="Ф.И.О"/>
+                            <input type="text" className="input-text" placeholder="Email"/>
+                            <textarea className='form__textarea input-text' placeholder="Сообщение..."></textarea>
+                            <input type="submit" value="Отправить"/>
                         </form>
                     </div>
                 </div>
@@ -43,10 +67,7 @@ const Footer = () => {
                     </div>
                     <div className="footer__social-networks-link">
                         <ul>
-                            <li><a href="/#"><img src={VK_IMG} alt="VK"/></a></li>
-                            <li><a href="/#"><img src={FACEBOOK_IMG} alt="Facebook"/></a></li>
-                            <li><a href="/#"><img src={TWITTER_IMG} alt="Twitter"/></a></li>
-                            <li><a href="/#"><img src={INSTAGRAM_IMG} alt="Instagram"/></a></li>
+                            {dataLinks}
                         </ul>
                     </div>
                 </div>

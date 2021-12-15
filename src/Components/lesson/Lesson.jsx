@@ -45,10 +45,10 @@ const Lesson = () => {
 
             <div className="lesson__description">
                 <div className="lesson__description-links">
-                    <a className="lesson__description-link" href="#lesson__about">About</a>
-                    <a className="lesson__description-link" href="#lesson__learning">What you'll learn</a>
-                    <a className="lesson__description-link" href="#lesson__programs">Programs</a>
-                    <a className="lesson__description-link" href="#lesson__instructor">Instructor</a>
+                    <a className="lesson__description-link" href="#lesson__about">Подробнее</a>
+                    <a className="lesson__description-link" href="#lesson__learning">Что Изучите</a>
+                    <a className="lesson__description-link" href="#lesson__programs">Программа</a>
+                    <a className="lesson__description-link" href="#lesson__instructor">Преподаватель</a>
                 </div>
 
                 <div className="lesson__about" id="lesson__about">
@@ -71,6 +71,7 @@ const Lesson = () => {
                         <p>
                         Цели этого курса - начать работу с Python как языком программирования и дать вам представление о том, как начать работать с данными в Python.
                         В этом курсе вы узнаете о:
+                        </p>
                         <ul>
                             <li>Что такое Python и почему он полезен.</li> 
                             <li>Применение Python в науке о данных</li> 
@@ -80,7 +81,6 @@ const Lesson = () => {
                             <li>Как работать с файлами для чтения и записи данных в Python</li> 
                             <li>Как использовать pandas, обязательный пакет для всех, кто пытается анализировать данные на Python.</li> 
                         </ul>
-                        </p>
                     </div>
                 </div>
                 <div className="lesson__programs" id="lesson__programs">
@@ -132,7 +132,7 @@ const Lesson = () => {
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
     )
 }
 

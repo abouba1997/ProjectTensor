@@ -5,7 +5,6 @@ import { Form, Button, h1 } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TeacherForm = () => {
-    
     return(
         <>
         <h1>Adding a new teacher</h1>

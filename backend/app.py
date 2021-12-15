@@ -5,9 +5,17 @@ from config import Config
 
 from flask_migrate import Migrate
 
+from werkzeug.utils import secure_filename
+import os, errno
+
+
+UPLOAD_FOLDER = '/path/to/the/uploads'
+ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
+
 
 app = Flask(__name__)
 app.config.from_object(Config)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 CORS(app)
 
 db = SQLAlchemy(app)
@@ -15,6 +23,21 @@ db = SQLAlchemy(app)
 import models
 
 migrate = Migrate(app, db)
+
+# Create a directory in a known location to save files to.
+uploads_dir = os.path.join(app.instance_path, 'uploads')
+try:
+    os.makedirs(uploads_dir)
+    UPLOAD_FOLDER = uploads_dir
+except OSError as exc:
+    if exc.errno != errno.EEXIST:
+        raise
+    pass
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 
 @app.route('/')
 def index():
@@ -28,6 +51,7 @@ def format_category(category):
         "description": category.description
     }
 
+
 def format_teacher(teacher):
     return {
         "id": teacher.id,
@@ -37,6 +61,7 @@ def format_teacher(teacher):
         "address": teacher.address,
         "biography": teacher.biography
     }
+
 
 def format_lesson(lesson):
     return {
@@ -48,6 +73,7 @@ def format_lesson(lesson):
         "image": lesson.image,
         "infos": lesson.infos
     }
+
 
 # API
 
@@ -102,7 +128,6 @@ def update_category(id):
 #####  Category (End) #######
 
 
-
 #####  Teacher (Begin) #######
 
 # Create a teacher 1
@@ -150,7 +175,6 @@ def update_teacher(id):
     db.session.commit()
     formatted_teacher = format_teacher(teacher.one())
     return {'category': formatted_teacher}
-
 
 #####  Teacher (End) #######
 

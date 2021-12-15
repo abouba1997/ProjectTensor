@@ -2,7 +2,7 @@ import Online_learning_illustration from '../img/Online_learning_illustration.sv
 
 const Landing = () => {
     return(
-        <div className="wrap">
+        <div className="wrap wrap__landing">
             <div className="home-page">
                 <div className="home-page__text">
                     <p className="home-page__title">
@@ -13,7 +13,7 @@ const Landing = () => {
                         <span className="slogan">Откройте для себя навыки будущего.</span>
                         <span className="slogan">И возьмите свою карьеру в свои руки.</span>
                     </p>
-                    <p><a href="/#" className="home-page__button">Начать</a></p>
+                    <p><a href="#contact_page" className="home-page__button">Начать</a></p>
                 </div>
                 <div className="home-page__illustration">
                     <img className="illustration_img" src={Online_learning_illustration} alt="Online Learning Illustration"/>

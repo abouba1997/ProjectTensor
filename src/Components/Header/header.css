@@ -17,9 +17,6 @@
 .header__left, .footer__left {
     margin: auto 0;
 }
-.slogan {
-    font-size: 22px;
-}
 .logo__link {
     display: block;
     text-decoration: none;
@@ -202,52 +199,9 @@
         padding: 0;
         border-bottom: 2px solid #242424;
     }
-    .home-page__title {
-        font-size: 30px;
-    }
-    .slogan {
-        font-size: 22px;
-    }
-    .home-page {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .home-page__text {        
-        width: 100%;
-        max-width: 600px;
-        padding: 15px;
-        margin: 0 auto;
-    }
-    .home-page__illustration {
-        padding: 30px;
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    .home-page__title {
-        margin: 0;
-    }
-    .slogan {
-        font-size: 18px;
-    }
-    .home-page__button {
-        font-size: 22px;
-        padding: 10px 25px;
-    }
-
 }
 @media screen and (max-width:630px) {
     .wrapper__content {
         border-radius: 70px 0 0 0;
-    }
-    .home-page__title {
-        font-size: 24px;
-    }
-    .slogan {
-        font-size: 16px;
-    }
-    .home-page__button {
-        font-size: 18px;
-        padding: 8px 18px;
     }
 }

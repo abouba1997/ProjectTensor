@@ -4,10 +4,37 @@ import CERTIFICATE_IMG from '../img/certificate.png';
 
 import "./advantages.css"
 
+const AdvantageElement = ({title, src}) => {
+    return (
+        <div className="cards cards__advantage">
+            <img className="cards__img" src={src} alt=""/>
+            <div className="cards__title">{title}</div>
+        </div>
+    )
+} 
+
 const Advantages = () => {
+    const advantagesList = [
+        {
+            id: 1,
+            src: BOOK_IMG,
+            title: "Качественное образование",
+        },
+        {
+            id: 2,
+            src: GROUP_IMG,
+            title: "Совместное обучение и коммуникация",
+        },
+        {
+            id: 3,
+            src: CERTIFICATE_IMG,
+            title: "Получение диплома",
+        },
+    ];
+
     return (
         <div className="wrap">
-            <div className="advantages">
+            <div className="advantages" id='advantages'>
                 <header>
                     <p className="advantages__title">TensorSchool и Преимущества </p>
                 </header>
@@ -16,23 +43,18 @@ const Advantages = () => {
                         пространств и учебных сред для обучения студентов под руководством преподавателей.
                 </div>
                 <div className="advantage">
-                    <div className="cards cards__advantage">
-                        <img className="cards__img" src={BOOK_IMG} alt="Lesson Book"/>
-                        <div className="cards__title" title="Lesson Title">Качественное образование</div>
-                    </div>
-                    <div className="cards cards__advantage">
-                        <img className="cards__img" src={GROUP_IMG} alt="Lesson Group"/>
-                        <div className="cards__title" title="Lesson Title">Совместное обучение и коммуникация</div>
-                    </div>
-                    <div className="cards cards__advantage">
-                        <img className="cards__img" src={CERTIFICATE_IMG} alt="Lesson Certificate"/>
-                        <div className="cards__title" title="Lesson Title">Получение диплома</div>
-                    </div>
+                    {advantagesList.map((advantage) => 
+                        <AdvantageElement 
+                            key={advantage.id} 
+                            src={advantage.src} 
+                            title={advantage.title}/>
+                        )
+                    }
                 </div>
                 <div className="advantages__rounded">
                     <p className="advantages__rounded-information">В TensorSchool вы познакомитесь с миром дизайна,
                         разработкой интерфейсов и бэкендов</p>
-                    <a href="/#" className="advantages__rounded-link">Начать</a>
+                    <a href="#contact_page" className="advantages__rounded-link">Начать</a>
                 </div>
             </div>
         </div>

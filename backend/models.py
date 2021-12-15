@@ -3,6 +3,7 @@ from sqlalchemy.dialects.postgresql import JSON
 from sqlalchemy.orm import backref
 from datetime import datetime
 
+
 class Teacher(db.Model):
     __tablename__ = 'teacher'
     id = db.Column(db.Integer, primary_key=True)
@@ -13,7 +14,7 @@ class Teacher(db.Model):
     biography = db.Column(JSON)
     lessons = db.relationship("Lesson", backref='teacher')
 
-    
+
     def __init__(self, name, profession, work, address, biography):
         self.name = name
         self.profession = profession
